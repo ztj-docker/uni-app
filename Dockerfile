@@ -9,7 +9,7 @@ WORKDIR /srv
 RUN npm install
 RUN npm audit fix
 
-FROM node:latest
+FROM node:alpine
 LABEL maintainer="Ztj <ztj1993@gmail.com>"
 COPY --from=builder /srv /srv
 WORKDIR /srv
