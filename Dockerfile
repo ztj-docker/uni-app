@@ -13,4 +13,3 @@ LABEL maintainer="Ztj <ztj1993@gmail.com>"
 COPY --from=builder /srv /srv
 WORKDIR /srv
 EXPOSE 80
-CMD ["yarn", "serve"]
